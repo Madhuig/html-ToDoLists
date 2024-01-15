@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDoList</title>
+    <link href="./style.css" rel="stylesheet" />
+    <script src="./source.js">
+    </script>
+</head>
+<body>
+    <h1 id="myHeader">TO DO List</h1>
+    <input type="button" id="addButton" value="Add" onclick="addTask()">
+    <input type="text" id="input" placeholder="enter task.....">
+    <hr />
+    <ul id="tasks">
+     <li>
+       <input type="button" class="done" onclick="markDone(this.parentNode)" value="&#x2713;" />
+       <input type="button" class="remove" onclick="remove(this.parentNode)" value="&#x2715;" />
+       <input type="button" class="highlight" onclick="markit(this.parentNode)" value="&#x21;" />
+       make todo list
+     </li>
+    </ul>
+    <div id="divabout">
+    </div>
+    <hr />
+    <input type="button" value="About" onclick="doAbout()">
+    <input type="button" value="clear" onclick="clearAbout()">
+    <hr />
+    <ul class="info">
+    <li>'<span style="color:green">&#x2713</span>' - mark as complete </li>
+    <li>'<span style="color:red;">&#x2715</span>' - remove from list</li>
+    <li>'<span style="color: blue;">&#x21</span>' - highlight a list item</li>
+    </ul>
+</body>
+</html>
